@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- This is my first site -->
+<html lang="fa">
+    <meta charset="UTF=8">
+<head>
+    <link rel="stylesheet"  href="cardcss.css">
+    <link rel="login"  href="loginform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Detailed Products</title>
+    <style >
+        #object{
+             width: 400px;
+            height: 500px;
+            float: right;
+            padding: 200px;
+            
+        }
+        body{
+            text-align: center;
+          
+        }
+        
+    </style>
+    </head>
+<body style="background-color: #e9cad2;" >
+    
+    <nav>
+        <div class="topnav">
+          <a href="#ban">Home</a>
+        <a class="active" href="#products">Women</a>
+        <a href="#products">Man</a>
+        <a href="#products">Accessories</a>
+        <a href="#footer2">About us</a>
+      </div>
+              </nav>
+   
+<!----login-->
+
+<div class="wrapper">
+    <div class="col-2">
+        <img src="1.png" >
+    </div>
+    <div class="login_box">
+      <div class="login-header">
+        <span>Login</span>
+      </div>
+  
+      <div class="input_box">
+        <input type="text" id="user" class="input-field" required>
+        <label for="user" class="label">Username</label>
+        <i class="bx bx-user icon"></i>
+      </div>
+  
+      <div class="input_box">
+        <input type="password" id="pass" class="input-field" required>
+        <label for="pass" class="label">Password</label>
+        <i class="bx bx-lock-alt icon"></i>
+      </div>
+  
+      <div class="remember-forgot">
+        <div class="remember-me">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember me</label>
+        </div>
+  
+        <div class="forgot">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+  
+      <div class="input_box">
+        <input type="submit" class="input-submit" value="Login">
+      </div>
+  
+      <div class="register">
+        <span>Don't have an account? <a href="#">Register</a></span>
+      </div>
+    </div>
+  </div>
+  
+
+<!--footer-->
+<section id="footer2">
+    <div class="footer">
+        <div class="small-container2">
+            <div class="rowfooter">
+                <div class="footercol3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                     <li>Our Community</li>
+                     <li>Opportunities for you</li>
+                     <li>Blog Post</li>
+                     <li>Our Policy</li>
+                    </ul>
+                </div>
+                <div class="footercol4">
+                    <h3>Follow us</h3>
+                    <ul>
+                     <li>Facebook</li>
+                     <li>Twitter</li>
+                     <li>Instagram</li>
+                     <li>Whatsapp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+        
+    </div>    
+
+<!----js for toggle form-->
+<script>
+    var LoginForm  = document.getElementById("LoginForm");
+    var RegForm  = document.getElementById("RegForm");
+    var Indicator  = document.getElementById("Indicator");
+
+     function register(){
+        RegForm.style.transform= "translateX(0px)";
+        LoginForm.style.transform= "translateX(0px)";  
+        Indicator.style.transform= "translateX(100px)";  
+     }
+     function login(){
+        RegForm.style.transform= "translateX(300px)";
+        LoginForm.style.transform= "translateX(300px)";  
+        Indicator.style.transform= "translateX(0px)";
+     }
+</script>
+</body>
+
+</html>
